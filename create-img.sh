@@ -46,11 +46,11 @@ btwifiset:country=GB|timeout=30
 
 # Install apps
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#apps
-apps:name=pushpin|apps=curl,libasound2-dev,libjack-dev,apturl,python3-brlapi,xserver-xorg,xserver-xorg-video-fbdev,xinit,pciutils,xinput,xfonts-100dpi,xfonts-75dpi,xfonts-scalable
+apps:name=pushpinaudio|apps=libasound2-dev,libjack-dev,apturl,python3-brlapi,git
 
 # Configure network
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#network
-network:wifissid=myssid|wifipassword=mypassword|wificountry=GB
+# network:wifissid=|wifipassword=|wificountry=GB
 
 # This configuration eliminates the need for piwiz so disable it
 disables:piwiz
@@ -64,7 +64,7 @@ trim-enable
 graphics:graphics=X11
 
 # Run config script
-runscript:script=$PWD/setup.sh
+# runscript:script=$PWD/setup.sh
 
 EOF
     ) | bash -c "cat >|$assets/my.plugins"
