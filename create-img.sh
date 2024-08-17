@@ -46,7 +46,7 @@ user:adduser=pushpin|password=groovebox|addgroup=audio
 
 # Install apps
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#apps
-apps:name=pushpinaudio|apps=libasound2-dev,libjack-dev,apturl,python3-brlapi,git,raspberrypi-ui-mods
+apps:name=pushpinaudio|apps=libasound2-dev,libjack-dev,apturl,python3-brlapi,git,libcairo2-dev,pkgconfig,jackd,python3-dev,raspberrypi-ui-mods
 
 # Configure network
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#network
