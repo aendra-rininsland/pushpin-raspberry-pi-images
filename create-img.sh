@@ -42,15 +42,15 @@ user:adduser=pushpin|password=groovebox|addgroup=audio
 
 # Install btwifiset (Control Pi's WiFi from your phone)
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#btwifiset
-btwifiset:country=GB|timeout=30
+# btwifiset:country=GB|timeout=30
 
 # Install apps
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#apps
-apps:name=pushpinaudio|apps=libasound2-dev,libjack-dev,apturl,python3-brlapi,git
+apps:name=pushpinaudio|apps=libasound2-dev,libjack-dev,apturl,python3-brlapi,git,raspberrypi-ui-mods
 
 # Configure network
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#network
-# network:wifissid=|wifipassword=|wificountry=GB
+network:wifissid=$WIFI_SSID|wifipassword=$WIFI_SSID|wificountry=GB
 
 # This configuration eliminates the need for piwiz so disable it
 disables:piwiz
@@ -61,7 +61,11 @@ trim-enable
 
 # Enable X11
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#graphics
-graphics:graphics=X11
+graphics:graphics=wayland
+
+# Configure localization settings to the same as this system
+# https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#l10n
+L10n:host
 
 # Run config script
 # runscript:script=$PWD/setup.sh
