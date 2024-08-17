@@ -50,7 +50,7 @@ apps:name=pushpinaudio|apps=libasound2-dev,libjack-dev,apturl,python3-brlapi,git
 
 # Configure network
 # https://github.com/gitbls/sdm/blob/master/Docs/Plugins.md#network
-network:wifissid=$WIFI_SSID|wifipassword=$WIFI_SSID|wificountry=GB
+network:wifissid=$WIFI_SSID|wifipassword=$WIFI_PASSWORD|wificountry=GB
 
 # This configuration eliminates the need for piwiz so disable it
 disables:piwiz
