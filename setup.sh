@@ -20,6 +20,6 @@ chown -R pushpin /pushpin
 
 echo "Installing PushPin deps"
 
-# pip install -r /pushpin/requirements.txt
+pip install -r /pushpin/requirements.txt
 
 echo "DONE"
